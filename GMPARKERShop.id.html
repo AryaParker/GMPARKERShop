@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMPARKER Shop | Jasa Minecraft & Digital Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #00d2ff;
+            --secondary-color: #3a7bd5;
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #ffffff;
+            --accent: #ff00ea;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 { margin: 0; font-size: 3rem; text-transform: uppercase; letter-spacing: 2px; }
+        .tagline { font-weight: bold; color: #ffeb3b; margin-bottom: 20px; }
+
+        .section-title {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin: 40px 0 20px;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .price {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-item {
+            background: #252525;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-order {
+            background-color: #25d366;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover { color: var(--primary-color); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GMPARKER SHOP</h1>
+    <p class="tagline">⚡ CEPAT - MURAH - BERKUALITAS ⚡</p>
+    <p>Website Resmi: <strong>GMPARKERShop.id</strong></p>
+</header>
+
+<div class="container">
+    
+    <!-- RENDER & EDIT -->
+    <h2 class="section-title"><i class="fas fa-paint-brush"></i> RENDER & EDIT</h2>
+    <div class="grid">
+        <div class="card"><span>✨ Render 4K</span> <span class="price">4K</span></div>
+        <div class="card"><span>🎨 Render Edit</span> <span class="price">2K</span></div>
+        <div class="card"><span>🎬 JJ Render</span> <span class="price">2K</span></div>
+        <div class="card"><span>🖼️ YouTube Banner</span> <span class="price">5K</span></div>
+        <div class="card"><span>💎 Edit Logo</span> <span class="price">5K</span></div>
+        <div class="card" style="border: 2px dashed #ffeb3b;"><span>🎁 FREE HD RENDER!</span> <span class="price">FREE</span></div>
+    </div>
+
+    <!-- MODELLING & SKIN -->
+    <h2 class="section-title"><i class="fas fa-cube"></i> MODELLING & SKIN</h2>
+    <div class="grid">
+        <div class="card"><span>🏗️ Modelling</span> <span class="price">10K</span></div>
+        <div class="card"><span>👕 Custom Skin</span> <span class="price">5K</span></div>
+        <div class="card"><span>🔄 Remake Skin</span> <span class="price">4K</span></div>
+    </div>
+
+    <!-- BUILD PROJECT -->
+    <h2 class="section-title"><i class="fas fa-hammer"></i> BUILD PROJECT</h2>
+    <div class="grid">
+        <div class="card"><span>🏠 Build Kecil</span> <span class="price">10K</span></div>
+        <div class="card"><span>🏢 Build Sedang</span> <span class="price">20K</span></div>
+        <div class="card"><span>🏰 Build Besar</span> <span class="price">30K</span></div>
+    </div>
+
+    <!-- HUBUNGI KAMI -->
+    <h2 class="section-title"><i class="fas fa-phone"></i> HUBUNGI KAMI (ORDER)</h2>
+    <div class="contact-list">
+        <div class="contact-item">
+            <span><strong>👑 OWNER</strong> (085849090562)</span>
+            <a href="https://wa.me/6285849090562" class="btn-order">Order via WA</a>
+        </div>
+        <div class="contact-item">
+            <span>🛠️ ADMIN 1 (0895426511826)</span>
+            <a href="https://wa.me/62895426511826" class="btn-order">Order via WA</a>
+        </div>
+        <!-- Tambahkan admin lainnya sesuai pola di atas -->
+    </div>
+
+    <!-- SOSIAL MEDIA -->
+    <h2 class="section-title text-center" style="text-align: center; border:none;">JOIN COMMUNITY</h2>
+    <div class="social-icons">
+        <a href="https://whatsapp.com/channel/0029Vb7e9FM9WtC2gE3Zhs03" title="Saluran WA"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://tiktok.com/@gmparker.shop2" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@GMPARKERSHOP" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/gmparkershop" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 GMPARKER SHOP. All Rights Reserved.</p>
+    <p>Metode Pembayaran: GOPAY | DANA</p>
+</footer>
+
+</body>
+</html>
